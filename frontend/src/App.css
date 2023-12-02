@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+  width: 100%;
+}
+
+ 
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.tuesdaylogo{
+  
+}
+
+/* Styles for the application name text */
+.tuesdaylogo {
+  font-family: 'Arial', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  color: #3498db; /* Blue color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Animation for a nice color transition */
+@keyframes rainbow {
+  0% { color: #3498db; } /* Blue */
+  20% { color: #e74c3c; } /* Red */
+  40% { color: #2ecc71; } /* Green */
+  60% { color: #f39c12; } /* Orange */
+  80% { color: #9b59b6; } /* Purple */
+  100% { color: #3498db; } /* Back to Blue */
+}
+
+/* Apply the animation to the name text */
+.tuesdaylogo:hover {
+  animation: rainbow 2s infinite;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.grid > div:nth-child(10n + 6),
+.grid > div:nth-child(10n + 7),
+.grid > div:nth-child(10n + 8),
+.grid > div:nth-child(10n + 9),
+.grid > div:nth-child(10n + 10) {
+  background:rgba(0,0,0,0.5);
+}

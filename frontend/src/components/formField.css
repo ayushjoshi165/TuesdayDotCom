@@ -1,0 +1,20 @@
+.form-container {
+    width: 300px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the form */
+  }
+  
+  .form-row {
+    display: flex;
+    margin: 8px 0;
+  }
+  
+  .label-left {
+    width: 100px; /* Adjust the width of the label as needed */
+    text-align: left;
+  }
+/*   
+  .input-right {
+    flex: 1;
+    text-align: right;
+  } */
+  
