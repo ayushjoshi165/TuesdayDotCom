@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import UpdateUser from "./UpdateUser";
 import UserForm from "./UserForm";
@@ -7,13 +7,13 @@ import "font-awesome/css/font-awesome.min.css";
 
 import Button from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";
-import DialogActions from "@mui/material/DialogActions";
+// import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogTitle from "@mui/material/DialogTitle";
 
 import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
-import RefreshIcon from '@mui/icons-material/Refresh';
+import RefreshIcon from "@mui/icons-material/Refresh";
 
 export default function Home() {
   const [data, setData] = useState([]);
@@ -86,9 +86,8 @@ export default function Home() {
 
   return (
     <div className="table-container">
-      <UserForm refreshData={getUsersData} /> 
-     <span>Refresh list</span> <RefreshIcon onClick={getUsersData} />
-
+      <UserForm refreshData={getUsersData} />
+      <span>Refresh list</span> <RefreshIcon onClick={getUsersData} />
       {loading ? (
         <p>Loading...</p>
       ) : data.length > 0 ? (
