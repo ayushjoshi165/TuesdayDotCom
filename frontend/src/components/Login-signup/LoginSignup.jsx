@@ -1,3 +1,4 @@
+//Added signup and login pages in master branch for now
 import React from "react";
 import "./LoginSignup.css";
 
@@ -33,10 +34,20 @@ const LoginSignup = () => {
         forgot password ? <span>Click here</span>
       </div>
       <div className="submit-container">
-        <div className={action === "Login" ? "submit gray" : "submit"} onClick ={()=>{setAction("Sign Up")}}>
+        <div
+          className={action === "Login" ? "submit gray" : "submit"}
+          onClick={() => {
+            setAction("Sign Up");
+          }}
+        >
           Sign Up
         </div>
-        <div className={action === "Sign Up" ? "submit gray" : "submit"} onClick ={()=>{setAction("Login")}}>
+        <div
+          className={action === "Sign Up" ? "submit gray" : "submit"}
+          onClick={() => {
+            setAction("Login");
+          }}
+        >
           Login
         </div>
       </div>
